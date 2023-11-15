@@ -1,0 +1,317 @@
+body {
+    height: 100vh;
+    color: #000000;
+    background: rgb(255, 255, 255);
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    transition: all .3s ease;
+  }
+  .wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+  }
+  .dark-mode {
+    background-color: #1b1919;
+    color: #000000;
+  }
+  .container {
+    max-width: 1440px;
+    padding: 0 20px;
+  }
+  .box2 {
+    height: 400px;
+    background: rgb(255, 251, 0);
+  }
+  
+  .container {
+    max-width: 1440px;
+    padding: 0 15px;
+  }
+  
+  .nav {
+      width: 400px; 
+      display: flex;
+      text-align: center;
+      
+  }
+.box {
+  height: 400px;
+  background: white;
+}
+
+.div__text {
+  overflow-wrap: break-word;
+}
+
+.item {
+  position: relative;
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 0.3em 0.3em 1em rgba(0,0,0,0.3);
+  overflow-x: hidden;
+}
+
+.result__item {
+    padding: 10px 20px;
+    background-color: firebrick;
+}
+
+.title {
+  width: 100%;
+  height: 30px;  
+    border-radius: 10px;
+    color: #000000;
+    font-size: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 0 15px rgba(0,0,0,0.22);
+    padding-bottom: 10px;
+    
+  }
+  .emptyText {
+    position: absolute;
+    bottom: -16px;
+    left: 60px;
+    
+    font-size: 12px;
+    line-height: 13px;
+    color: #ff0f0f;
+    transform: translateY(-28px);
+    opacity: 0;
+    transition: all 200ms;
+  }
+  
+  .number {
+    position: absolute;
+    bottom: -16px;
+    left: 25px;
+    
+    font-size: 12px;
+    line-height: 13px;
+    color: #ff0f0f;
+    transform: translateY(-28px);
+    opacity: 0;
+    transition: all 200ms;
+  }
+  .boxBtn {
+    background-color: #992f2f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 33px;
+    
+  }
+  
+  #btnAdd {
+    margin-bottom: 10px;
+    color: #fff;
+    background-color: #5c5ce3;
+    position: absolute;
+    margin: 25px 14px;
+    width: 400px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+  }
+  #btnAdd:hover {
+    background-color: #2828cc;
+  }
+  #btnAdd:focus {
+    
+    box-shadow: #2f2ee9 1px 2px 12px;
+  }
+  
+  button {
+    border: none;
+    border-radius: 1rem;
+    transition: all 0.5s linear;
+  }
+  
+  .tooltip {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    align-items: center;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: #AAAAAA;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    left: 62px;
+    width: 60px;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+.form {
+    border: none;
+    background: none;
+    color: #8b8ba7;
+  }
+
+  /* styling of whole input container */
+  .form {
+    --timing: 0.3s;
+    --width-of-input: 100%;
+    --height-of-input: 40px;
+    --border-height: 2px;
+    --input-bg: #fff;
+    --border-color: #2f2ee9;
+    --border-radius: 30px;
+    --after-border-radius: 1px;
+    position: relative;
+    width: var(--width-of-input);
+    height: var(--height-of-input);
+    display: flex;
+    align-items: center;
+
+  }
+  .form.empty {
+    --border-color: #ff0f0f;
+    
+  }
+  .form.empty .emptyText {
+    transform: translateY(0); 
+    opacity: 1;
+  }
+
+  .form.numbers {
+    --border-color: #ff0f0f;
+    
+  }
+  .form.numbers .number {
+    transform: translateY(0); 
+    opacity: 1;
+  }
+  /* styling of Input */
+  .input {
+    resize: none;
+    overflow: hidden;
+    overflow-wrap: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 35px;
+    margin-top: 18px;
+    font-size: 15px;
+    background-color: transparent;
+    width: 280px;
+    height: 38px;
+
+    border: none;
+  }
+  /* styling of animated border */
+  .form:before {
+    content: "";
+    position: absolute;
+    background: var(--border-color);
+    transform-origin: center;
+    width: 100%;
+    height: var(--border-height);
+    bottom: 0;
+    border-radius: 1px;
+    transition: transform var(--timing) ease;
+  }
+
+  textarea:focus {
+    outline: none;
+  }
+
+  .ul {
+    margin: 14px -25px;
+    margin-bottom: 34px;
+    background-color: #8b8ba7;
+    border: 3px #8b8ba7;
+
+  }
+
+  .imgSvg:hover {
+
+    opacity: .4;
+  }
+
+  #result {
+    background-color: #ffffff;
+    display: block;
+    flex-wrap: wrap;
+    padding: 25px;
+  }
+
+  .div {
+    position: relative;
+    width: 100%;
+    padding: 20px 0 1px 5px;
+    margin-bottom: 15px;
+    box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.14);
+    -webkit-box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.14);
+    -moz-box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.14); 
+}
+
+
+/* The switch - the box around the slider */
+.switch {
+  position: absolute;
+  top: 6px;
+  right: 17px;
+  font-size: 11px;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #2196F3;
+  transition: .4s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 20px;
+  left: 0.3em;
+  bottom: 0.3em;
+  background-color: yellow;
+  transition: .4s;
+}
+
+.switch input:checked + .slider:before {
+  background-color: black;
+  border-radius: 50px;
+  box-shadow: inset 9px 0px 1px 0px white;
+}
+
+.switch input:checked + .slider {
+  background-color: black;
+}
+
+.switch input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+.switch input:checked + .slider:before {
+  transform: translateX(1.5em);
+}
+  
